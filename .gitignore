@@ -1,7 +1,6 @@
-.idea
-.venv
-.gitignore
-db.sqlite3
-__pycache__
+.venv/
 .env
-media
+db.sqlite3
+.idea/
+media/
+__pycache__
