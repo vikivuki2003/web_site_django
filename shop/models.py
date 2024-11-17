@@ -39,7 +39,7 @@ class Category(models.Model):
         super(Category, self).save(*args, **kwargs)
 
     def get_absolute_url(self):
-        pass
+        return reverse('shop:category_list', kwargs={'slug': self.slug})
 
 class Product(models.Model):
     category = models.ForeignKey(
@@ -59,13 +59,13 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'Product'
         verbose_name_plural = 'Products'
-        ordering = ['-created_at']
+
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
-        pass
+        return reverse('shop:product_detail', kwargs={'slug': self.slug})
 
 
 class ProductManager(models.Manager):
