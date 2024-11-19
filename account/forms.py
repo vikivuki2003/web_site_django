@@ -50,3 +50,5 @@ class UserUpdateForm(forms.ModelForm):
             raise forms.ValidationError("Email is already in use or too long")
 
         return email
+
+
