@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'django_email_verification',
+    'django_google_fonts',
 
     #applications
     'shop',
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'site_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR / 'site_django' /'templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -116,6 +117,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_DIRS = [BASE_DIR / 'site_django' /'static']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -175,3 +177,7 @@ STRIPE_API_VERSION = env('STRIPE_API_VERSION')
 
 YOOKASSA_SECRET_KEY = env('YOOKASSA_SECRET_KEY')
 YOOKASSA_SHOP_ID = env('YOOKASSA_SHOP_ID')
+
+
+GOOGLE_FONTS = ['Montserrat:wght@300,400', 'Roboto']
+GOOGLE_FONTS_DIR = BASE_DIR / 'static'
