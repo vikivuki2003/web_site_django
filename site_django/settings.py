@@ -18,9 +18,11 @@ SECRET_KEY = 'django-insecure-a^!$v5&)@ne92fe=-6hw%=wlj#!ey3%j%9ctkp_=2p0j3jg(1g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
-
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,6 +40,8 @@ INSTALLED_APPS = [
     'django_email_verification',
     'django_google_fonts',
     'sorl.thumbnail',
+    'django_celery_beat',
+    'django_celery_results',
 
     #applications
     'shop',
@@ -184,3 +188,9 @@ GOOGLE_FONTS = ['Montserrat:wght@300,400', 'Roboto']
 GOOGLE_FONTS_DIR = BASE_DIR / 'static'
 
 STRIPE_WEBHOOK_SECRET = env('STRIPE_WEBHOOK_SECRET')
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_RESULT_EXTENDED = True
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers.DatabaseScheduler'
