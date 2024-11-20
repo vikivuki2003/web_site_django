@@ -1,8 +1,10 @@
 amqp==5.3.1
 asgiref==3.8.1
 billiard==4.2.1
+Brotli==1.1.0
 celery==5.4.0
 certifi==2024.8.30
+cffi==1.17.1
 chardet==5.2.0
 charset-normalizer==3.4.0
 click==8.1.7
@@ -12,12 +14,14 @@ click-repl==0.3.0
 colorama==0.4.6
 crispy-bootstrap5==2024.10
 cron-descriptor==1.4.5
+cssselect2==0.7.0
 Deprecated==1.2.15
 deprecation==2.1.0
 distro==1.9.0
 Django==5.1.3
 django-celery==3.1.17
 django-celery-beat==2.7.0
+django-celery-results==2.5.1
 django-crispy-forms==2.3
 django-email-verification==0.3.3
 django-environ==0.11.2
@@ -25,6 +29,7 @@ django-google-fonts==0.0.3
 django-mathfilters==1.0.0
 django-timezone-field==7.0
 flower==2.0.1
+fonttools==4.55.0
 furl==2.1.3
 greenlet==3.1.1
 humanize==4.11.0
@@ -38,11 +43,14 @@ netaddr==1.3.0
 orderedmultidict==1.0.1
 packaging==24.2
 pendulum==3.0.0
-pillow==11.0.0
+pillow==10.4.0
 prometheus_client==0.21.0
 prompt_toolkit==3.0.48
 psycopg2-binary==2.9.10
+pycparser==2.22
+pydyf==0.11.0
 PyJWT==2.10.0
+pyphen==0.15.0
 python-crontab==3.2.0
 python-dateutil==2.9.0.post0
 pytz==2024.2
@@ -60,6 +68,7 @@ stripe==11.2.0
 tabulate==0.9.0
 time-machine==2.16.0
 tinycss2==1.4.0
+tinyhtml5==2.0.0
 tornado==6.4.1
 typing_extensions==4.12.2
 tzdata==2024.2
@@ -67,6 +76,8 @@ urllib3==2.2.3
 validators==0.34.0
 vine==5.1.0
 wcwidth==0.2.13
+weasyprint==63.0
 webencodings==0.5.1
 wrapt==1.16.0
 yookassa==3.4.1
+zopfli==0.2.3.post1
