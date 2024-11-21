@@ -26,8 +26,10 @@ django-crispy-forms==2.3
 django-email-verification==0.3.3
 django-environ==0.11.2
 django-google-fonts==0.0.3
+django-htmx==1.21.0
 django-mathfilters==1.0.0
 django-timezone-field==7.0
+Faker==33.0.0
 flower==2.0.1
 fonttools==4.55.0
 furl==2.1.3
