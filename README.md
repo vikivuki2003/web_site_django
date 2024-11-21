@@ -1,21 +1,20 @@
-#**Django WEb-site SHOP**
+# **Django WEb-site SHOP**
 
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 
-##**Description**
+## **Description**
 This project is a web site developed using the Django framework. It includes various features such as user authentication, content management, and integration with external APIs.
 
 
-##**Features**
+## **Features**
 - User registration and authentication
 - User profile management
 - Create, edit, and delete content
 - Integration with WeasyPrint for PDF document generation
 - Responsive design for mobile devices
-- 
 
-##**Getting Started**
+## **Getting Started**
 Follow these instructions to set up the project locally or using Docker.
 
 
@@ -24,12 +23,12 @@ Follow these instructions to set up the project locally or using Docker.
 Make sure you have the following installed:
 - Python (3.x) (if you are not using Docker)
 - Docker and Docker Compose (if using Docker)
-- 
-
-##**Installation**
 
 
-##**Option 1: Local Installation**
+## **Installation**
+
+
+## **Option 1: Local Installation**
 
 
 Clone the repository:
@@ -64,7 +63,7 @@ Your application should now be accessible at http://127.0.0.1:8000/.
 
 
 
-##**Option 2: Docker Installation**
+## **Option 2: Docker Installation**
 Clone the repository:
 git clone https://github.com/vikivuki2003/web_site_django.git  
 cd web_site_django  
