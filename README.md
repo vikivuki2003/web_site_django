@@ -38,37 +38,37 @@ Make sure you have the following installed:
 
 Clone the repository:
 
-git clone https://github.com/vikivuki2003/web_site_django.git  
-cd web_site_django  
+- git clone https://github.com/vikivuki2003/web_site_django.git  
+- cd web_site_django  
 
 
 Create a virtual environment:
 
-python -m venv venv  
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`  
+- python -m venv venv  
+- source venv/bin/activate  # On Windows use `venv\Scripts\activate`  
 
 
 Install the dependencies:
 
-pip install -r requirements.txt  
+- pip install -r requirements.txt  
 
 
 Set up the database:
 
 Update your database configuration in settings.py. 
 Then run the following commands to apply migrations:
-python manage.py makemigrations  
-python manage.py migrate  
+- python manage.py makemigrations  
+- python manage.py migrate  
 
 
 Create a superuser (optional):
 
 To access the Django admin interface:
-python manage.py createsuperuser  
+- python manage.py createsuperuser  
 
 Run the development server:
 
-python manage.py runserver  
+- python manage.py runserver  
 
 
 Your application should now be accessible at http://127.0.0.1:8000/.
@@ -78,23 +78,23 @@ Your application should now be accessible at http://127.0.0.1:8000/.
 ## **Option 2: Docker Installation**
 Clone the repository:
 
-git clone https://github.com/vikivuki2003/web_site_django.git  
-cd web_site_django  
+- git clone https://github.com/vikivuki2003/web_site_django.git  
+- cd web_site_django  
 
 
 Build the Docker image:
-docker-compose build  
+- docker-compose build  
 
 
 Start the application:
 
-docker-compose up  
+- docker-compose up  
 
 
 Your application should be running and accessible at http://localhost:8000/.
 
 
-Create a superuser (optional):
+**Create a superuser (optional):**
 
 To access the Django admin interface, you may need to run the command inside the Docker container:
 docker-compose exec web python manage.py createsuperuser  
@@ -103,9 +103,10 @@ docker-compose exec web python manage.py createsuperuser
 ##**Environment Variables**
 
 You can configure environment variables in the .env file (make sure to provide this file). Here’s an example:
-DEBUG=True  
-DJANGO_SECRET_KEY=your_secret_key  
-DATABASE_URL=postgres://user:password@db:5432/database_name  
+
+1. DEBUG=True  
+2. DJANGO_SECRET_KEY=your_secret_key  
+3. DATABASE_URL=postgres://user:password@db:5432/database_name  
 
 
 
@@ -121,29 +122,29 @@ Use the admin dashboard to manage content (if set up).
 ##**Technologies Used**
 
 This project is built using the following technologies:
-Python
-JavaScript
-Ajax
-CSS
-HTML
-Postgres
-Celery Beat
-Celery Result
-Celery
-Redis Broker
-Django Htmx
-Nginx
-Gunicorn
-API
-Swagger and Redoc Docs
-Celery Flower
-Stripe
-Yookassa
-Django Rest Framework
-Docker
-Docker Compose
-GitHub Actions
-Git
+- Python
+- JavaScript
+- Ajax
+- CSS
+- HTML
+- Postgres
+- Celery Beat
+- Celery Result
+- Celery
+- Redis Broker
+- Django Htmx
+- Nginx
+- Gunicorn
+- API
+- Swagger and Redoc Docs
+- Celery Flower
+- Stripe
+- Yookassa
+- Django Rest Framework
+- Docker
+- Docker Compose
+- GitHub Actions
+- Git
 
 
 
